@@ -1,0 +1,30 @@
+/* eslint-disable no-undef */
+function makeNotesArray(){
+    return [
+        {
+            note_id : 1,
+            note_name : 'a',
+            content : 'a',
+            folder_id : 1,
+            modified: '2021-01-15T21:23:30.039Z'
+        },
+        {
+            note_id : 2,
+            note_name : 'b',
+            content : 'b',
+            folder_id : 2,
+            modified: '2021-01-15T21:23:30.039Z'
+        },
+        {
+            note_id : 3,
+            note_name : 'c',
+            content : 'c',
+            folder_id : 3,
+            modified: '2021-01-15T21:23:30.039Z'
+        }
+    ]
+}
+
+module.exports = {
+    makeNotesArray,
+}
