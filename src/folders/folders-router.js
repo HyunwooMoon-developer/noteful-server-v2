@@ -28,10 +28,11 @@ folderRouter
     const {folder_name} = req.body;
     const newFolder = {folder_name};
 
-    if(!newFolder)
+    if(!newFolder){
     return res.status(400).json({
         error: {message : `Missing '${key}' in request body`}
     })
+    }
     foldersService.insertFolders(
         req.app.get('db'),
         newFolder
